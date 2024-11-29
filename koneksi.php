@@ -4,5 +4,8 @@ $user     = 'postgres.pgwthdemnavsehafqsfh';
                     
 $password = 'b@nU8GDdV6GQkXQ'; 
 $db       = 'postgres'; 
-$con = mysqli_connect($host, $user, $password, $db) or die(mysqli_error());
+$con = mysqli_connect($host, $user, $password, $db);
+if (!$con) {
+  die("Connection failed: " . mysqli_connect_error());
+}
 ?>

@@ -1,9 +1,8 @@
 <?php
-$host     = 'localhost';
-$user     = 'root'; 
+$host     = 'aws-0-ap-southeast-1.pooler.supabase.com';
+$user     = 'postgres.pgwthdemnavsehafqsfh'; 
                     
-$password = ''; 
-$db       = 'register_login';
- 
+$password = 'b@nU8GDdV6GQkXQ'; 
+$db       = 'postgres'; 
 $con = mysqli_connect($host, $user, $password, $db) or die(mysqli_error());
 ?>
